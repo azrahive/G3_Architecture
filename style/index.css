@@ -8,14 +8,31 @@
   .bg-color{
     background-color: rgba(253, 150, 33, 0.1);
   }
-  .nav-links{
-   
-  }
+
   .navbar{
     justify-content: space-between;
     align-items: center;
     
   }
+
+  #footer{
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+  }
+
+  .btn-nav{
+    background-color: rgb(249, 150, 37);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-size: .55rem;
+    border-radius: 8px;
+    border: none;
+
+  }
+
+ 
 
   .btn-primary{
     background-color: rgb(255, 144, 14);
@@ -57,6 +74,9 @@
   }
   .nav-link{
     text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+   
   }
 
   .dark-2{
@@ -177,10 +197,6 @@
     text-align: center;
   }
 
-  .alisha{
-    width: 100%;
-  }
-
   .sponsors-companies{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -190,8 +206,26 @@
   }
     */
 
+    #experience-badge{
+      padding: 45px 42px;
+      margin-left: -100px;
+      margin-top: -100px;
+
+    }
+    #experience-year{
+      font-weight: bold;
+      font-size: 4rem;
+    }
+    #experience-ex{
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .architectured-img img{
+      width: 100%;
+    }
   @media screen and (max-width: 576px){
-    .navbar,.nav-links,.teams{
+    .navbar,.nav-links,.teams, .features{
       flex-direction: column;
     }
     .team-image-container,.facts-container,.sponsors-companies{
@@ -205,20 +239,22 @@
 
     }
 
+   .nav-item{
+    margin-bottom: 10px ;
+    text-align: center;
+   }
+   
     .sponsors-companies{
       justify-items: center;
       gap: 50px;
 
     }
-
-   
-
-    .facts-container{
-      
-      
-    }
-
-    
+    #experience-badge{
+     
+      margin-left: 20px;
+      margin-top: 20px;
+      justify-items: center;}
+  
   }
 
   @media screen and (min-width: 576px) and (max-width:992){
